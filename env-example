@@ -33,7 +33,7 @@ COMPOSE_FILE=docker-compose.yml
 COMPOSE_PATH_SEPARATOR=:
 
 # Define the prefix of container names. This is useful if you have multiple projects that use laradock to have seperate containers per project.
-COMPOSE_PROJECT_NAME=laradock
+COMPOSE_PROJECT_NAME=php-test-blog
 
 ### PHP Version ###########################################
 
@@ -218,11 +218,11 @@ APACHE_SITES_PATH=./apache2/sites
 APACHE_PHP_UPSTREAM_CONTAINER=php-fpm
 APACHE_PHP_UPSTREAM_PORT=9000
 APACHE_PHP_UPSTREAM_TIMEOUT=60
-APACHE_DOCUMENT_ROOT=/var/www/
+APACHE_DOCUMENT_ROOT=/var/www/public
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+MYSQL_VERSION=5.7
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
